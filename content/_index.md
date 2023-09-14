@@ -7,7 +7,7 @@ draft: false
 ## Index of content
 
 - [Introduction to asymptotic notations](/blog/asymptotic-notations/)
-
+- [Gale Shapely Algorithm](/blog/gale-shapely/)
 
 ## Sister websites
 

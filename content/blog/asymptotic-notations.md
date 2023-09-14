@@ -17,3 +17,5 @@ This notation describes an upper bound on the growth rate of a function but not 
 
 **Little omega Notation** [$ \omega $]:
 This notation is the counterpart to little o notation but for lower bounds. It represents a lower bound but not a tight bound. Mathematically, [$ f(x) = \omega(g(x)) $] if for every constant [$ c > 0 $], there exists a [$ x_0 > 0 $] such that [$ f(x) > c \cdot g(x) $] for all [$ x > x_0 $].
+
+![Asymptotic Notations](../../assets/asymptotic_notation.png)
