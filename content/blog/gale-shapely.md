@@ -56,3 +56,36 @@ To express this in big O notation, we drop the constant factor (2) and write:
 Therefore, we have mathematically proven that the Gale-Shapley algorithm has a time complexity of O(n^2).
 
 # Empirical Analysis
+
+Running Gale-Shapely against a brute-force code, we have the following graph.
+
+![Brute-force-compare](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/compare_brute_force_gale_shapley.png)
+
+We see that Gale-Shapely grows rises very little time wise as input size grows while brute-force grows quasi-exponentially (I do not mean mathematically exponential, but it is not linear either, looks closer to exponential).
+
+The Brute-Force code I used has the following pseudo-code.
+
+```pseudo-code
+function bruteForceStableMarriage(Preferences):
+    Initialize an empty list for all possible permutations of marriages
+    Generate all possible permutations of marriages
+    
+    for each permutation in allPermutations:
+        if isStable(permutation, Preferences):
+            return permutation
+
+    # If no stable marriage is found
+    return "No stable marriage exists"
+
+function isStable(permutation, Preferences):
+    for each man in permutation:
+        for each woman in permutation:
+            if man prefers woman over his current partner in permutation:
+                if woman prefers man over her current partner in permutation:
+                    return false
+    return true
+```
+
+Now looking at the code below where I have implemented Gale-Shapely, and iteratively increased the input size and charted it agaisnt time to run, we see that the time taken by the algorithm also charts a similar curve as [$ n^2 $], which is what we expect since we proved that previously.
+
+![time complexity](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/gale_shapley_time_complexity.png)
