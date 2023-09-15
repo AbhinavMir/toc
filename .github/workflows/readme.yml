@@ -1,0 +1,25 @@
+name: Copy _index.md to readme.md
+
+on:
+  push:
+    branches:
+      - main # Change to the branch you want to trigger this action on
+
+jobs:
+  copy-to-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Copy _index.md to readme.md
+      run: |
+        cp content/_index.md readme.md
+      shell: bash
+
+    - name: Upload readme.md as artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: readme-artifact
+        path: readme.md

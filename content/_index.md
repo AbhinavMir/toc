@@ -8,7 +8,8 @@ draft: false
 
 This website heavily relies on the book Algorithm Design by Jon Kleinberg and Eva Tardos. The book is available for free [here](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/). [1]
 
-- [Introduction to asymptotic notations](/blog/asymptotic-notations/)
+- [General introduction](/blog/general-introduction/)
+- [Asymptotic notations](/blog/asymptotic-notations/)
 - [Gale Shapely Algorithm](/blog/gale-shapely/)
 
 ## Sister websites
