@@ -6,6 +6,8 @@ draft: false
 
 ## Index of content
 
+This website heavily relies on the book Algorithm Design by Jon Kleinberg and Eva Tardos. The book is available for free [here](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/). [1]
+
 - [Introduction to asymptotic notations](/blog/asymptotic-notations/)
 - [Gale Shapely Algorithm](/blog/gale-shapely/)
 
@@ -15,3 +17,7 @@ Other websites by me (⚠️ - All are under construction).
 - [Ciphertxt - learn cryptogrpahy, elliptic curves, cryptoanalysis, number theory, formal methods and network security](https://ciphertxt.xyz/)
 - [Networking](https://github.com/AbhinavMir/networking) 
 - [Databases](https://github.com/AbhinavMir/databases) 
+
+## References
+
+[1] Kleinberg, J., Tardos, &E. (2006). Algorithm Design. Addison Wesley.
