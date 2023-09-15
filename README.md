@@ -10,6 +10,7 @@ Website: [https://abhinavmir.github.io/toc/](https://abhinavmir.github.io/toc/)
 
 This website heavily relies on the book Algorithm Design by Jon Kleinberg and Eva Tardos. The book is available for free [here](https://www.cs.princeton.edu/~wayne/kleinberg-tardos/). [1]
 
+> ❌ These links won't work here, please visit the website instead.
 - [General introduction](/blog/general-introduction/)
 - [Asymptotic notations](/blog/asymptotic-notations/)
 - [Gale Shapely Algorithm](/blog/gale-shapely/)
