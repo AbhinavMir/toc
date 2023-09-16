@@ -88,4 +88,8 @@ function isStable(permutation, Preferences):
 
 Now looking at the code below where I have implemented Gale-Shapely, and iteratively increased the input size and charted it agaisnt time to run, we see that the time taken by the algorithm also charts a similar curve as [$ n^2 $], which is what we expect since we proved that previously.
 
+## Source code
+
+[brute_force.c]()
+
 ![time complexity](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/gale_shapley_time_complexity.png)
