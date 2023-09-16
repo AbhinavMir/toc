@@ -88,11 +88,10 @@ function isStable(permutation, Preferences):
 
 Now looking at the code below where I have implemented Gale-Shapely, and iteratively increased the input size and charted it agaisnt time to run, we see that the time taken by the algorithm also charts a similar curve as [$ n^2 $], which is what we expect since we proved that previously.
 
+![time complexity](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/gale_shapley_time_complexity.png)
 ## Source code
 
 (some errors might exist, I have not standardised the output format yet)
 
 [brute_force.c](https://github.com/AbhinavMir/toc/blob/main/code/stable-marriage/b-f.c)
 [gale_shapely.c](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/stable-marriage/g-s.c)
-
-![time complexity](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/gale_shapley_time_complexity.png)
