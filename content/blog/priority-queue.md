@@ -7,6 +7,10 @@ A priority queue is a data structure that maintains a collection of elements, ea
 
 Priority queues are used in applications requiring efficient management of elements with associated priorities, including scheduling, graph algorithms, data compression, and task prioritization.
 
+### Implementation
+
+1-3 are naive ways to implement a priority queue. 4 is the most efficient way to implement a priority queue, it uses a heap. In priority queues, the most commonly used heap is the binary heap. Binary heaps can be either min-heaps or max-heaps, depending on whether you want the minimum or maximum element to have the highest priority. While insertion is fastest in unsorted arrays, peek and delete are fastest in sorted arrays. Binary heaps are the most efficient way to implement a priority queue, with logarithmic time complexities for insertion and deletion.
+
 1. **Unsorted Array**:
    - Insert (Enqueue): [$ O(1) $] (average case), [$ O(n) $] (worst case)
    - Delete (Dequeue): [$ O(n) $]
