@@ -90,6 +90,9 @@ Now looking at the code below where I have implemented Gale-Shapely, and iterati
 
 ## Source code
 
-[brute_force.c]()
+(some errors might exist, I have not standardised the output format yet)
+
+[brute_force.c](https://github.com/AbhinavMir/toc/blob/main/code/stable-marriage/b-f.c)
+[gale_shapely.c](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/stable-marriage/g-s.c)
 
 ![time complexity](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/gale_shapley_time_complexity.png)
