@@ -93,5 +93,5 @@ Now looking at the code below where I have implemented Gale-Shapely, and iterati
 
 (some errors might exist, I have not standardised the output format yet)
 
-[brute_force.c](https://github.com/AbhinavMir/toc/blob/main/code/stable-marriage/b-f.c)
+[brute_force.c](https://github.com/AbhinavMir/toc/blob/main/code/stable-marriage/b-f.c) <br>
 [gale_shapely.c](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/stable-marriage/g-s.c)
