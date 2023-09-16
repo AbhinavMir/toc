@@ -47,4 +47,12 @@ Priority queues are used in applications requiring efficient management of eleme
 
 5. **D-ary heaps** are slower than binary heaps because binary heaps have better cache locality compared to d-ary heaps. In modern computer architectures, accessing data in contiguous memory locations is faster than accessing data spread out across multiple memory locations. Binary heaps store elements in a more compact manner, making better use of cache lines and reducing cache misses, which can lead to faster access times.
 
+Proofs here are obvious and trivial. I will add them later.
+
 ### Empirical Analysis
+
+![pq-ops](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/pq_operations.png)
+
+This image comprises three subplots, collectively providing a comprehensive performance analysis of various priority queue implementations concerning input size and operation runtime. The first subplot demonstrates the insertion time (in seconds) for different priority queue types, such as Unsorted Array, Sorted Array, Sorted Linked List, and D-ary Heaps with varying degrees (d=2 and d=4) as the input size increases. The middle subplot illustrates the average retrieval time per operation, while the rightmost subplot portrays the average extraction time per operation, both showcasing how these times evolve with increasing input size. 
+
+You can expect the following trends in the runtime measurements for the priority queue implementations in the generated plots: In the "Insertion Time" subplot, Unsorted Array is likely to have stable times, while Sorted Array and Sorted Linked List may exhibit increasing times due to sorting operations. D-ary Heap (d=2 and d=4) should maintain relatively stable insertion times, with d=4 potentially being slightly faster. In the "Retrieval Time" subplot, Unsorted Array should have stable times, while Sorted Array and Sorted Linked List may show linearly increasing times with input size. D-ary Heap (d=2 and d=4) is expected to perform efficiently with stable retrieval times. In the "Extraction Time" subplot, Unsorted Array should have stable times, while Sorted Array and Sorted Linked List may display linearly increasing times. D-ary Heap (d=2 and d=4) should perform efficiently with stable extraction times. The choice of d in the D-ary Heap may impact performance, with larger d values offering potential slight improvements.
