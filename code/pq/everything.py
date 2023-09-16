@@ -280,7 +280,7 @@ plt.savefig("d_heap.png")
 
 plt.clf()
 
-d_values = list(range(2, 11))
+d_values = list(range(2, 101))
 d_heap_resources = []
 
 for d in d_values:
