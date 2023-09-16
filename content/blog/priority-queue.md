@@ -61,4 +61,4 @@ You can expect the following trends in the runtime measurements for the priority
 
 ![pq-ops](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/d_heap_resources.png)
 
-"Maximum resident set size" (max RSS) is the peak amount of physical memory (RAM) used by a program during its execution, indicating the highest memory usage recorded. It's a measure of a program's memory efficiency and is often used for memory optimization and profiling.
+"Maximum resident set size" (max RSS) is the peak amount of physical memory (RAM) used by a program during its execution, indicating the highest memory usage recorded. It's a measure of a program's memory efficiency and is often used for memory optimization and profiling. We see for some reason, at [$ d=6, d=9 $] we find the lowest usages via CPU times.
