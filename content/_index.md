@@ -11,6 +11,7 @@ This website heavily relies on the book Algorithm Design by Jon Kleinberg and Ev
 - [General introduction](/blog/general-introduction/)
 - [Asymptotic notations](/blog/asymptotic-notations/)
 - [Gale Shapely Algorithm](/blog/gale-shapely/)
+- [Priority Queues](/blog/priority-queue/)
 
 ## Sister websites
 
