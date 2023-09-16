@@ -49,6 +49,8 @@ Priority queues are used in applications requiring efficient management of eleme
 
 Proofs here are obvious and trivial. I will add them later.
 
+[code](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/pq/everything.py)
+
 ### Empirical Analysis
 
 ![pq-ops](https://raw.githubusercontent.com/AbhinavMir/toc/main/assets/pq_operations.png)

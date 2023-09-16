@@ -6,7 +6,6 @@ import resource
 # Priority Queue using Unsorted Array
 class UnsortedArrayPriorityQueue:
     def __init__(self):
-        # wait
         self.items = []
 
     def insert(self, item, priority):
