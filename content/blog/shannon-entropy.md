@@ -11,7 +11,7 @@ Claude Shannon formulated the mathematical expression for entropy, which is now 
    - Shannon started with the idea of information and uncertainty. He wanted a measure of the amount of information in a message or a random variable.
    - He considered a discrete random variable [$ X $] with [$ n $] possible outcomes, denoted as [$ x_1, x_2, \ldots, x_n $].
    - Shannon introduced the concept of "self-information" (or "surprisal") for each outcome [$ x_i $]. He reasoned that less probable outcomes should carry more information.
-   - 
+   
 
 2. **Self-Information:** Shannon defined self-information [$ I(x_i) $] as follows:
    
@@ -28,7 +28,7 @@ Claude Shannon formulated the mathematical expression for entropy, which is now 
 
    [$ H(X) = \sum_{i=1}^{n} P(x_i) \cdot I(x_i) = -\sum_{i=1}^{n} P(x_i) \cdot \log_b(P(x_i)) \ $].
 
-   
+
 
    This formula represents the average amount of information needed to describe the outcomes of the random variable [$ X $]. This also defines the fact that information content of each outcome [$ x_i $] is weighted by its probability [$ P(x_i) $]. Outcomes with higher probabilities contribute more to the overall uncertainty, while rare outcomes have a more substantial impact on the measure of entropy.
 
