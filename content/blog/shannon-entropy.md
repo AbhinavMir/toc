@@ -82,6 +82,6 @@ Overall, a lower entropy bound provides a fundamental constraint on the processi
 
 Now, the crucial insight here is that the entropy (uncertainty) associated with the reconstructed permutation [$ X $] cannot be greater than the entropy of the comparisons themselves. This intuitively makes sense because the information content required to describe the order of elements should not exceed the information content of the comparisons.
 
-To formalize this, we use Stirling's formula \[$ log_2(n!) \approx n \log_2(n) $]. Therefore, we can conclude that \[$ Omega(n \log_2(n)) $] comparisons are required to reconstruct the random permutation [$ X $] accurately.
+To formalize this, we use Stirling's formula \[$ log_2(n!) \approx n \log_2(n) $]. Therefore, we can conclude that \[$ \Omega(n \log_2(n)) $] comparisons are required to reconstruct the random permutation [$ X $] accurately.
 
 In simpler terms, this lower bound tells us that as the number of elements [$ (n $]) grows, the number of necessary comparisons to reconstruct a random permutation increases at least as fast as [$ n \log_2(n) $]. This is a fundamental result with implications in various areas, including sorting algorithms and information theory.
