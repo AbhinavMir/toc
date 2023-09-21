@@ -26,7 +26,9 @@ Claude Shannon formulated the mathematical expression for entropy, which is now 
 
 3. **Entropy Definition:** Shannon recognized that the average information content of a random variable should be a measure of its uncertainty or entropy. He defined entropy [$ H(X) $] as the expected value (or mean) of self-information:
 
-   [$ H(X) = \sum_{i=1}^{n} P(x_i) \cdot I(x_i) = -\sum_{i=1}^{n} P(x_i) \cdot \log_b(P(x_i)) $]
+   [$ H(X) = \sum_{i=1}^{n} P(x_i) \cdot I(x_i) = -\sum_{i=1}^{n} P(x_i) \cdot \log_b(P(x_i)) \ $].
+
+   
 
    This formula represents the average amount of information needed to describe the outcomes of the random variable [$ X $]. This also defines the fact that information content of each outcome [$ x_i $] is weighted by its probability [$ P(x_i) $]. Outcomes with higher probabilities contribute more to the overall uncertainty, while rare outcomes have a more substantial impact on the measure of entropy.
 
