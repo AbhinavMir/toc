@@ -53,3 +53,35 @@ Decoding in Huffman coding operates by traversing the Huffman tree, which is con
 ### A minimal data compression algorithm
 
 A minimal Pythonic implementation can be found [here](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/compression/compression.py) and a C implementation can be found [here](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/compression/compression.c). However, for whatever reason, my C compression is larger than original data - which is not ... compressed, but the Python one works perfectly.
+
+## Lower Entropic Bounds
+
+A lower entropy bound, in the context of information theory and probability theory, is a mathematical constraint that establishes the minimum amount of entropy or uncertainty in a given probability distribution or information source. Entropy, often represented by the letter "H," measures the randomness or unpredictability of a set of outcomes. It quantifies the average amount of information needed to describe or represent those outcomes.
+
+The concept of a lower entropy bound is significant because it sets a fundamental limit on how much uncertainty or randomness can be reduced or compressed in a particular context. In other words, it defines the minimum level of uncertainty that must be preserved or transmitted when encoding information or processing data. This limit is typically expressed as a lower bound on the entropy value and is useful in various applications, including:
+
+1. Data Compression: In data compression algorithms, a lower entropy bound helps determine the minimum size of compressed data. It ensures that no compression method can achieve a smaller compressed size without violating the lower bound. Shannon's entropy coding, such as Huffman coding, takes advantage of this concept to design efficient compression schemes.
+
+2. Communication Theory: Lower entropy bounds are essential in communication theory to assess the efficiency of data transmission and encoding. They indicate the minimum number of bits required to represent messages accurately, considering the inherent uncertainty in the data.
+
+3. Information Security: In cryptography and information security, understanding lower entropy bounds is crucial for assessing the strength of encryption methods. It ensures that encrypted data remains sufficiently random and secure. (More about this on my other blog, [Ciphertxt)](https://www.ciphertxt.xyz/introduction/pseudrandom-generators))
+
+To establish a lower entropy bound for a specific probability distribution, mathematical techniques, inequalities, and properties of the distribution are used. The bound serves as a theoretical benchmark that guides the design of algorithms, protocols, and systems that process or transmit information.
+
+For example, in the context of a fair coin toss (a binary probability distribution), the lower entropy bound would be 1 bit because, in the worst-case scenario, you need one bit to represent each outcome (heads or tails). Any encoding scheme that tries to represent the outcomes in fewer than 1 bit would violate this lower bound and result in information loss.
+
+Overall, a lower entropy bound provides a fundamental constraint on the processing, representation, and communication of information, ensuring that certain levels of uncertainty are preserved or accounted for in various applications.
+
+## Proving the lower entropy bound
+
+1. **Random Permutation:** We have a set of \(n\) elements, and we choose a random permutation of these elements with a uniform distribution. The entropy of this random permutation is given by \(H[X] = \log_2(n!)\), which measures the uncertainty or information content associated with the possible orderings.
+
+2. **Comparisons:** We perform a series of pairwise comparisons (\(Y_1, Y_2, \ldots, Y_t\)) to determine the order of these elements. These comparisons are dependent on the actual permutation, which we denoted as \(X\).
+
+3. **Reconstruction:** When we have enough comparisons (\(t\) is sufficiently large), we can reconstruct the original permutation \(X\) from these comparisons. In other words, \(X\) is a function of \(Y_1, Y_2, \ldots, Y_t\).
+
+Now, the crucial insight here is that the entropy (uncertainty) associated with the reconstructed permutation \(X\) cannot be greater than the entropy of the comparisons themselves. This intuitively makes sense because the information content required to describe the order of elements should not exceed the information content of the comparisons.
+
+To formalize this, we use Stirling's formula \(\log_2(n!) \approx n \log_2(n)\). Therefore, we can conclude that \(\Omega(n \log_2(n))\) comparisons are required to reconstruct the random permutation \(X\) accurately.
+
+In simpler terms, this lower bound tells us that as the number of elements (\(n\)) grows, the number of necessary comparisons to reconstruct a random permutation increases at least as fast as \(n \log_2(n)\). This is a fundamental result with implications in various areas, including sorting algorithms and information theory.
