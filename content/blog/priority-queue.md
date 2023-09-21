@@ -47,8 +47,7 @@ Priority queues are used in applications requiring efficient management of eleme
 
 5. **D-ary heaps** can be faster for extraction because with a larger "d," the elements in each node of the heap are more closely packed together in memory. This can improve cache performance, as accessing elements that are physically close to each other in memory is more cache-friendly. Smaller "d" values may result in elements being more spread out in memory, leading to more cache misses and slower access times. We will show a counter example with resource usages.
 
-Proofs here are obvious and trivial. I will add them later.
-
+p
 [code](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/pq/everything.py)
 
 ### Empirical Analysis

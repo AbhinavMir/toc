@@ -313,7 +313,7 @@ cpu_times_user = [data['cpu_time_user'] for data in d_heap_resources]
 max_resident_set_sizes = [data['max_resident_set_size'] for data in d_heap_resources]
 
 # Plot resource usage for different d values
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(12, 6)) 
 
 plt.subplot(1, 2, 1)
 plt.plot(d_values, cpu_times_user, marker='o')
