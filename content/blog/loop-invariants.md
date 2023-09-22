@@ -1,5 +1,5 @@
 ---
-title: "Sorts, Loop Invariants"
+title: "The many kind of Sorts, oh and Loop Invariants"
 date: 2020-05-03T00:00:00-00:00
 draft: false
 ---

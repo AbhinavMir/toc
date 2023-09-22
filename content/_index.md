@@ -13,7 +13,7 @@ This website heavily relies on the book Algorithm Design by Jon Kleinberg and Ev
 - [Gale Shapely Algorithm](/blog/gale-shapely/)
 - [Priority Queues](/blog/priority-queue/)
 - [Shannon Entropy](/blog/shannon-entropy/)
-- [Loop Invariants](/blog/loop-invariants/)
+- [The many kind of Sorts, oh and Loop Invariants](/blog/loop-invariants/)
 
 ## Sister websites
 
