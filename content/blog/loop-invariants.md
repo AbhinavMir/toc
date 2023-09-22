@@ -169,10 +169,6 @@ Randomized QuickSort's main advantage is its predictable performance. By choosin
 
 Deterministic QuickSort and Randomized QuickSort both have best and worst-case time complexities of $O(n \log n)$ and $O(n^2)$, respectively. However, Randomized QuickSort offers a more consistent average-case performance of $O(n \log n)$ due to its pivot randomization, making it less susceptible to specific input patterns that can degrade performance in deterministic QuickSort. This consistency and predictability make Randomized QuickSort generally preferable in scenarios with unknown or potentially adversarial input patterns.
 
-The implementation for the graph below comparing the two algorithms is available [here](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/loops/qs.py).
-
-![Quicksort vs Randomized Quicksort](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/loops/qs.png)
-
 ## 3. Bucket Sort
 
 Bucket sort is an algorithm that runs in linear $O(n)$ average time, but relies on assumptions about the input data. Specifically, it assumes elements are uniformly distributed over the interval $[0, 1)$.
@@ -203,3 +199,9 @@ $$E[n_i^2] = 2 - \frac{1}{n}$$
 This results in an overall expected running time of $O(n)$.
 
 Bucket sort beats the $\Omega(n \log n)$ comparison sort lower bound by not using comparisons. Instead it relies on the uniform input distribution.
+
+
+
+The implementation for the graph below comparing the three algorithms is available [here](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/loops/qs.py), it is written in Python.
+
+![Quicksort vs Randomized Quicksort](https://raw.githubusercontent.com/AbhinavMir/toc/main/code/loops/qs.png)
